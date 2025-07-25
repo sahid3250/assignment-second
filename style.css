@@ -224,10 +224,10 @@ h2 {
 
 .badge {
   position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 100px;
-  height: 100px;
+  top: -80px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
 }
 
 .text-section {
@@ -257,18 +257,20 @@ h2 {
 .text-section{
   text-align: start;
 }
-@media (max-width: 600px){
+@media (max-width: 768px){
   .container{
     flex-direction: column;
-    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .image-section{
+    width: 100%;
     height: auto;
-    padding: 0 50px;
   }
  .badge{
   display: none;
  } 
  .text-section,li{
-  font-size: 20px;
   align-items: center;
  }
 }
@@ -352,12 +354,6 @@ h2 {
   }
 }
 
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
 .subscribe-section {
   background-image: url('image/news-letter-bg.png'); 
   background-size: cover;
@@ -398,14 +394,13 @@ body {
   padding: 12px 20px;
   border: none;
   border-radius: 0 4px 4px 0;
-  cursor: pointer;
   font-size: 16px;
 }
 
 
 .footer {
   background-color: #f9f9f9;
-  padding: 40px 20px;
+  padding: 40px 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -424,8 +419,7 @@ body {
 .footer-center li, .footer-right li {
   margin-bottom: 8px;
 }
-
-.social-icons a img {
+.footer-icons a img {
   width: 24px;
   margin-right: 10px;
 }
@@ -446,7 +440,7 @@ body {
     text-align: center;
   }
 
-  .social-icons {
+  .footer-icons {
     margin-top: 10px;
   }
 }
